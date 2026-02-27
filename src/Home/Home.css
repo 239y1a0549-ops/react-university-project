@@ -1,0 +1,422 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+.home {
+  min-height: 100vh;
+  background-image: url('https://cdn.britannica.com/85/13085-050-C2E88389/Corpus-Christi-College-University-of-Cambridge-England.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(26, 54, 93, 0.85) 0%, rgba(43, 108, 176, 0.75) 100%);
+  z-index: 1;
+}
+
+.navbar {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--secondary);
+  background-color: var(--light-gray);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary);
+  transition: var(--transition);
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+  width: 70%;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.content > p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.intro {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature {
+  background-color: rgba(255, 255, 255, 0.95);
+  
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.feature:hover {
+  transform: translateX(5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.feature p {
+  color: var(--gray);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.departments {
+  width: 100%;
+  background-color:bisque;
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.departments h2 {
+  color: var(--primary);
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.departments p {
+  color: var(--gray);
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.more {
+  width: 100%;
+  background-color:beige;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow),cornflowerblue;
+  text-align: center;
+}
+
+.more h3 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: white;
+}
+
+.more p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.explore {
+  background-color:lightblue;
+  color: var(--primary);
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.explore:hover {
+  color:rebeccapurple;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 992px) {
+  .content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .content > p {
+    font-size: 1.3rem;
+  }
+  
+  .content {
+    gap: 2rem;
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .content h1 {
+    font-size: 2.3rem;
+  }
+  
+  .content > p {
+    font-size: 1.2rem;
+  }
+  
+  .intro {
+    padding: 2rem 1.5rem;
+  }
+  
+  .intro p {
+    font-size: 1.1rem;
+  }
+  
+  .feature {
+    padding: 1.8rem;
+  }
+  
+  .feature h3 {
+    font-size: 1.4rem;
+  }
+  
+  .departments,
+  .more {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .departments h2 {
+    font-size: 1.9rem;
+  }
+  
+  .more h3 {
+    font-size: 1.8rem;
+  }
+  
+  .more p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+  
+  .content {
+    padding: 2rem 1rem;
+    gap: 1.8rem;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+  }
+  
+  .content > p {
+    font-size: 1.1rem;
+  }
+  
+  .intro {
+    padding: 1.5rem 1rem;
+  }
+  
+  .intro p {
+    font-size: 1rem;
+  }
+  
+  .feature {
+    padding: 1.5rem 1rem;
+  }
+  
+  .departments,
+  .more {
+    padding: 2rem 1rem;
+  }
+  
+  .departments h2 {
+    font-size: 1.7rem;
+  }
+  
+  .departments p {
+    font-size: 1rem;
+  }
+  
+  .more h3 {
+    font-size: 1.6rem;
+  }
+  
+  .more p {
+    font-size: 1rem;
+  }
+  
+  .explore {
+    padding: 0.9rem 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content > * {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.content h1 {
+  animation-delay: 0.1s;
+}
+
+.content > p {
+  animation-delay: 0.2s;
+}
+
+.intro {
+  animation-delay: 0.3s;
+}
+
+.feature:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.feature:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.feature:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.departments {
+  animation-delay: 0.7s;
+}
+
+.more {
+  animation-delay: 0.8s;
+}

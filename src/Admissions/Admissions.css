@@ -1,0 +1,8 @@
+
+.card { max-width: 500px; margin: 20px auto; padding: 20px; background: rgb(184, 55, 55); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.card h2 { text-align: center; margin-bottom: 10px; }
+.card > p { text-align: center; color: #666; margin-bottom: 20px; }
+.form label { display: block; margin: 10px 0 5px; }
+.form input, .form select, .form textarea { width: 100%; padding: 8px; border: 1px solid #ccc; margin-bottom: 5px; }
+.form textarea { min-height: 80px; }
+.form input[type="submit"] { width: auto; background: #007bff; color: white; border: none; padding: 10px 25px; margin-top: 15px; cursor: pointer; }

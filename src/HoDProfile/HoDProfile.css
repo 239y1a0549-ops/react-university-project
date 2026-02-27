@@ -1,0 +1,42 @@
+.card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card h2 {
+    text-align: center;
+    color: hsl(0, 77%, 5%);
+}
+
+.content {
+    background:aliceblue;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px lab(60.09% 64.62 -29.47 / 0.1);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.content img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content h3 {
+    margin: 0 0 5px 0;
+    color: #222;
+}
+
+.content p {
+    margin: 5px 0;
+    color: #444;
+}
+
+.content strong {
+    color: #000;
+}
